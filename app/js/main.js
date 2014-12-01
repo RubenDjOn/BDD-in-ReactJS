@@ -4,7 +4,6 @@
 
 var Reqct = require('react');
 
-
 var Calculator = React.createClass({
   getInitialState: function() {
     return {sum: 0};
@@ -13,8 +12,6 @@ var Calculator = React.createClass({
   calculate: function(e) {
     e.preventDefault();
 
-    console.log(this.refs.number1.getDOMNode().value.trim());
-    console.log(this.refs.number2.getDOMNode().value.trim());
     var number1 = parseInt(this.refs.number1.getDOMNode().value.trim());
     var number2 = parseInt(this.refs.number2.getDOMNode().value.trim());
 
@@ -26,22 +23,12 @@ var Calculator = React.createClass({
   render: function() {
     return (
         <div className="calculator">
-          <input type="text" ref="number1" size="2" onChange={this.calculate} />
-          +
-          <input type="text" ref="number2" size="2" onChange={this.calculate} />
-          =
-          <input type="text" ref="sum" size="2" value={this.state.sum} />
-        </div>
-    );
-  }
-});
+          number1: <input type="text" id="txtNumber1" ref="number1" size="2" /><br />
+          number2: <input type="text" id="txtNumber2" ref="number2" size="2" /><br />
+          operators: <button id="btnAdd" onClick={this.calculate}>+</button><br /><br />
 
-var CommentBox = React.createClass({
-  render: function() {
-    return (
-      <div className="commentBox">
-        Hello, world! I am a CommentBox.
-      </div>
+          sum: <input type="text" id="txtSum" size="2" value={this.state.sum} />
+        </div>
     );
   }
 });

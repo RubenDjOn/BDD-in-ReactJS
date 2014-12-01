@@ -1,6 +1,6 @@
 var express = require('express');
 var server = express();
-server.use("/app",express.static(__dirname + "/"));
+server.use("/app", express.static(__dirname + "/"));
 server.get('/rest/rentals', function(req, res){
   res.json([ { name: 'widget 1' } ]);
 });
