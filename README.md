@@ -1,8 +1,5 @@
 BDD-in-React
 ============
-<<<<<<< HEAD
-An example app showing how to apply BDD workflow for an ReactJS web application.
-=======
 An example app showing how to apply BDD workflow for an ReactJS web application.
 
 Environment Setup
@@ -38,4 +35,3 @@ $ npm test
 You should see the output like this:
 
 ![Test Result](Result.png)
->>>>>>> 221c70722cf401163f08563db6ad2620b31ef3fb
