@@ -34,4 +34,4 @@ $ npm test
 
 You should see the output like this:
 
-![Test Result](Result.png)
+![Test Result](screenshot.png)
