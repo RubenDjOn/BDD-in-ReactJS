@@ -1,10 +1,11 @@
 {
   "name": "BDD-in-ReactJS",
   "version": "1.0.0",
-  "description": "",
+  "description": "An very simple example to demo how to BDD in ReactJS.",
   "main": "app/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app/app.js",        
+    "test": "protractor test/protractor-config.js"
   },
   "author": "Jonathan Lin (xingulin@gmail.com)",
   "license": "MIT",
