@@ -6,13 +6,13 @@ Feature: Calculator
   Background:
     Given a calculator
 
-#  Scenario: Add two numbers
-#    Given I have entered a number 50 into the calculator
-#    And I have entered another number 70 into the calculator
-#    When I press add
-#    Then the result should be 120 on the screen
+  Scenario: Add two numbers (Simple version)
+    Given I have entered a number 50 into the calculator
+    And I have entered another number 70 into the calculator
+    When I press add
+    Then the result should be 120 on the screen
 
-  Scenario Outline: Add two numbers
+  Scenario Outline: Add two numbers (Table version)
     Given I have entered a number <number1> into the calculator
     And I have entered another number <number2> into the calculator
     When I press add
