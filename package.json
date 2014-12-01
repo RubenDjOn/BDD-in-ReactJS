@@ -1,0 +1,26 @@
+{
+  "name": "BDD-in-ReactJS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Lin (xingulin@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^6.3.3",
+    "cucumber": "^0.4.4",
+    "expect.js": "^0.3.1",
+    "express": "^4.10.4",
+    "html5": "^1.0.5",
+    "react": "^0.12.1",
+    "reactify": "^0.17.1",
+    "should": "^4.3.0",
+    "zombie": "^2.4.0"
+  },
+  "dependencies": {
+    "express": "^4.10.4",
+    "protractor": "^1.4.0"
+  }
+}
